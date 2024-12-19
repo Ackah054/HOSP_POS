@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management Dashboard UI</title>
+    <link rel="stylesheet" href="task.css" />
+</head>
+<body>
+    <div class="task-manager">
+        <!-- left bar starts -->
+        <div class="left-bar">
+            <div class="upper-part">
+                <div class="actions">
+                    <div class="circle"></div>
+                    <div class="circle-2"></div>
+                </div>
+            </div>
+            <!-- left content starts -->
+            <div class="left-content">
+                <ul class="action-list">
+                    <li class="item">
+                        <img class="feather feather-inbox" src="images/inbox.jpg" alt="Inbox" />
+                        <span>Inbox</span>
+                    </li>
+                    <li class="item review-button" id="reviewButton">
+                        <img class="feather feather-star" src="images/reviewi.jpg" alt="Review" />
+                        <span>Review</span>
+                    </li>
+                    
+                    <li class="item">
+                        <img class="feather feather-calendar" src="images/upcoming.jpg" alt="Upcoming" />
+                        <span>Upcoming</span>
+                    </li>
+                    <li class="item">
+                        <img class="feather feather-hash" src="images/important.jpg" alt="Important" />
+                        <span>Important</span>
+                    </li>
+                    <li class="item">
+                        <img class="feather feather-users" src="images/meeting.jpg" alt="Meetings" />
+                        <span>Meetings</span>
+                    </li>
+                    <li class="item">
+                        <img class="feather feather-trash" src="images/trash.jpg" alt="Trash" />
+                        <span>Trash</span>
+                    </li>
+                </ul>
+                <ul class="category-list">
+                    <li class="item">
+                        <img class="feather feather-users" src="images/completed.jpg" alt="Completed" />
+                        <span>Completed</span>
+                    </li>
+                    <li class="item">
+                        <img class="feather feather-sun" src="images/pending.jpg" alt="Pending" />
+                        <span>Pending</span>
+                    </li>
+                    <li class="item">
+                        <img class="feather feather-trending-up" src="images/outdated.jpg" alt="Oudated" />
+                        <span>Oudated</span>
+                    </li>
+                    <li class="item">
+                        <img class="feather feather-moon" src="images/close time.jpg" alt="Close Time" />
+                        <span>Close Time</span>
+                    </li>
+                </ul>
+                <!-- Review wrapper to display reviewed tasks -->
+                <div class="review-wrapper">
+                   <!---- <h3>Reviewed Appointments</h3>-->
+                    <div id="reviewedTasksWrapper">
+                        <!-- Reviewed tasks will go here -->
+                    </div>
+                </div>
+            </div>
+            <!-- left content ends -->
+        </div>
+        <!-- left bar ends -->
+        <!-- page content starts -->
+        <div class="page-content">
+            <div class="header">
+                <img class="feather feather-search" src="images/year1.jpg" alt="Search" />
+                <input type="text" class="search-bar" placeholder="Search..." />
+            </div>
+            <div class="main-content">
+                <h2>Tasks</h2>
+                <div id="tasksWrapper">
+                    <!-- Tasks will go here -->
+                </div>
+            </div>
+        </div>
+        <!-- page content ends -->
+        <!-- right bar starts -->
+        <div class="right-bar">
+            <div class="right-header">
+                <img class="profile-pic" src="images/year1.jpg" alt="Profile" />
+                <div class="profile-info">
+                    <span class="profile-name">Godfred Ackah</span>
+                    <span class="profile-status">Online</span>
+                </div>
+                <a href="index.html" class="logout-btn">Logout</a>
+
+            </div>
+            <div class="right-content">
+                <h3>Upcoming Deadlines</h3>
+                <ul class="deadline-list">
+                    <!-- Deadlines will go here -->
+                </ul>
+            </div>
+        </div>
+        <!-- right bar ends -->
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

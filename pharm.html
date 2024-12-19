@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy POS</title>
+    <link rel="stylesheet" href="pharm.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Pharmacy POS System</h1>
+    </header>
+    <main>
+        <section id="inventory">
+            <h2>Inventory Management</h2>
+            <form id="inventoryForm">
+                <label for="drugName">Drug Name:</label>
+                <input type="text" id="drugName" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+                <label for="price">Price (Per Unit):</label>
+                <input type="number" id="price" required>
+                <button type="submit">Add to Inventory</button>
+            </form>
+            <h3>Current Inventory</h3>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Drug Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        
+        <section id="sales">
+            <h2>Sales Management</h2>
+            <form id="salesForm">
+                <label for="drugSelect">Select Drug:</label>
+                <select id="drugSelect"></select>
+                <label for="soldQuantity">Quantity Sold:</label>
+                <input type="number" id="soldQuantity" required>
+                <label for="amountPaid">Amount Paid:</label>
+                <input type="number" id="amountPaid" required>
+                <button type="submit">Record Sale</button>
+            </form>
+            <h3>Sales Records</h3>
+            <table id="salesTable">
+                <thead>
+                    <tr>
+                        <th>Drug Name</th>
+                        <th>Quantity Sold</th>
+                        <th>Amount Paid</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Hospital Pharmacy POS System</p>
+    </footer>
+    <script src="pharm.js"></script>
+</body>
+</html>
+

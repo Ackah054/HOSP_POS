@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Appointment Form</title>
+</head>
+<body>
+    <section id="appointment-form" class="appointment-form">
+        <div class="form-container">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form" action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Derick Korletey" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="example: Karlo" name="location" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="+233 5466 49021" name="phone" required>
+
+                <label for="Hospital">Hospitals:</label>
+                <select name="" id="Hospital"name="Hospital">
+                    <option value="wiawso">WIAWSO</option>
+                    <option value="wiawso">BOAKO</option>
+                    <option value="wiawso">DADIESO</option>
+                    <option value="wiawso">DWUNASE</option>
+                    <option value="wiawso">DEBISO</option>
+                    <option value="wiawso">JUABOSO</option>
+                    <option value="wiawso">ASANWINSO</option>
+                    <option value="wiawso">ENCHI</option>
+                    <option value="wiawso">BODI</option>
+                    <option value="wiawso">AKONTOMBRA</option>
+                </select>
+
+                <label for="doctor">Choose Doctor:</label>
+                <select id="doctor" name="doctor">
+                    <option value="doctor11">Doctor Team</option>
+                    <option value="doctor1">Dr. Derick Korletey (MED. SUP.)</option>
+                    <option value="doctor2">Dr. Caroline Awotwe (Optometrist)</option>
+                    <option value="doctor3">Dr. Essel Yeboah (Surgeon)</option>
+                    <option value="doctor4">Dr. Emmanuel Yensu (HEALTH OFFICER)</option>
+                    <option value="doctor5">Dr. Anthony Siedu (Female Ward)</option>
+                    <option value="doctor6">Dr. Godfred Ackah (Pharmacy)</option>
+                    <option value="doctor7">Dr. David Ackah (Accountant)</option>
+                    <option value="doctor8">Dr. Zita Ackah (DNS)</option>
+                    <option value="doctor9">Dr. Philo Adu (Emergency Ward)</option>
+                    <option value="doctor10">Dr. Justina Frimpong (Male Ward)</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+               <!--- <label for="symptoms">Symptoms (optional):</label>
+                <textarea id="symptoms" name="symptoms" placeholder="Describe your symptoms here..."></textarea>-->
+
+                <div class="form-buttons">
+                    <button type="submit">Book Appointment</button>
+                    <button type="button" id="close-form">Close</button>
+                </div>
+            </form>
+            <p id="success-message" style="display:none; color: green; text-align: center;">Appointment booked successfully!</p>
+        </div>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>
